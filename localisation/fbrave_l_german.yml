@@ -1,0 +1,21 @@
+﻿#l_english:
+#l_spanish:
+#l_french:
+l_german:
+#l_braz_por:
+#l_polish:
+#l_russian:
+CIVILIAN_SHIP_SENSOR_1: "Civilian $OBSERVATORY_1$"
+CIVILIAN_SHIP_SENSOR_1_DESC: "$OBSERVATORY_1_DESC$"
+CIVILIAN_SHIP_SENSOR_2: "Civilian $OBSERVATORY_1$"
+CIVILIAN_SHIP_SENSOR_2_DESC: "$OBSERVATORY_1_DESC$"
+CIVILIAN_SHIP_SENSOR_3: "Civilian $OBSERVATORY_1$"
+CIVILIAN_SHIP_SENSOR_3_DESC: "$OBSERVATORY_1_DESC$"
+CIVILIAN_SHIP_SENSOR_4: "Civilian $OBSERVATORY_1$"
+CIVILIAN_SHIP_SENSOR_4_DESC: "$OBSERVATORY_1_DESC$"
+
+#CIVILIAN_COMPUTER_1: "Civilian Avoidance Computer"
+fbrave_civilian_default_behavior: "§HFlee-behavior:§! This ship will immediately attempt to flee as far away from combat as possible."
+
+#civilian_computers: "Avoidance Computers"
+#civilian_computers_DESC: "Adds a computer to civilian spacecraft that is capable of automated avoidance behavior when engaged with hostiles."

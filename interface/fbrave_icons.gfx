@@ -1,0 +1,21 @@
+spriteTypes = {
+	spriteType = {
+		name = "gfxbravesensor1"
+		texturefile = "gfx/civsensor1.dds"
+	}
+
+	spriteType = {
+		name = "gfxbravesensor2"
+		texturefile = "gfx/civsensor2.dds"
+	}
+
+	spriteType = {
+		name = "gfxbravesensor3"
+		texturefile = "gfx/civsensor3.dds"
+	}
+
+	spriteType = {
+		name = "gfxbravesensor4"
+		texturefile = "gfx/civsensor4.dds"
+	}
+}

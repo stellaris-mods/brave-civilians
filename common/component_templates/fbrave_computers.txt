@@ -1,0 +1,115 @@
+@hit2 = 3
+@hit3 = 6
+@hit4 = 9
+
+@sensor1 = 20
+@sensor2 = 30
+@sensor3 = 40
+@sensor4 = 50
+
+# utility_component_template = {
+# 	key = "CIVILIAN_COMPUTER_1"
+# 	size = small
+# 	icon = "GFX_ship_part_computer_default"
+# 	icon_frame = 1
+# 	power = 60
+# 	cost = 20
+# 	class_restriction = { shipclass_science_ship shipclass_colonizer shipclass_constructor shipclass_transport }
+# 	size_restriction = { constructor colonizer science transport ScienceCruiser ConstructionCruiser }
+# 	component_set = "civilian_computers"
+# 	ship_behavior = "civilian_default"
+# 	should_ai_use = no
+# 	ai_weight = {
+# 		weight = 0
+# 	}
+# }
+
+utility_component_template = {
+	key = "CIVILIAN_SHIP_SENSOR_1"
+	size = medium
+	icon = "gfxbravesensor1"
+	icon_frame = 1
+	power = 0
+	cost = 5
+	sensor_range = @sensor1
+	class_restriction = { shipclass_science_ship shipclass_colonizer shipclass_constructor shipclass_transport }
+	size_restriction = { constructor colonizer science transport ScienceCruiser ConstructionCruiser }
+	ship_behavior = "civilian_default"
+	component_set = "ship_sensor_components"
+
+	ai_weight = {
+		weight = 1001
+	}
+	upgrades_to = "CIVILIAN_SHIP_SENSOR_2"
+}
+
+utility_component_template = {
+	key = "CIVILIAN_SHIP_SENSOR_2"
+	size = medium
+	icon = "gfxbravesensor2"
+	icon_frame = 1
+	power = -5
+	cost = 10
+	sensor_range = @sensor2
+	class_restriction = { shipclass_science_ship shipclass_colonizer shipclass_constructor shipclass_transport }
+	size_restriction = { constructor colonizer science transport ScienceCruiser ConstructionCruiser }
+	ship_behavior = "civilian_default"
+	prerequisites = { "tech_sensors_2" }
+	component_set = "ship_sensor_components"
+
+	modifier = {
+		ship_combat_speed_mult = 0.05
+	}
+
+	ai_weight = {
+		weight = 1002
+	}
+	upgrades_to = "CIVILIAN_SHIP_SENSOR_3"
+}
+
+utility_component_template = {
+	key = "CIVILIAN_SHIP_SENSOR_3"
+	size = medium
+	icon = "gfxbravesensor3"
+	icon_frame = 1
+	power = -10
+	cost = 10
+	sensor_range = @sensor3
+	class_restriction = { shipclass_science_ship shipclass_colonizer shipclass_constructor shipclass_transport }
+	size_restriction = { constructor colonizer science transport ScienceCruiser ConstructionCruiser }
+	ship_behavior = "civilian_default"
+	prerequisites = { "tech_sensors_3" }
+	component_set = "ship_sensor_components"
+
+	modifier = {
+		ship_combat_speed_mult = 0.1
+	}
+
+	ai_weight = {
+		weight = 1003
+	}
+	upgrades_to = "CIVILIAN_SHIP_SENSOR_4"
+}
+
+utility_component_template = {
+	key = "CIVILIAN_SHIP_SENSOR_4"
+	size = medium
+	icon = "gfxbravesensor4"
+	icon_frame = 1
+	power = -15
+	cost = 10
+	sensor_range = @sensor4
+	class_restriction = { shipclass_science_ship shipclass_colonizer shipclass_constructor shipclass_transport }
+	size_restriction = { constructor colonizer science transport ScienceCruiser ConstructionCruiser }
+	ship_behavior = "civilian_default"
+	modifier = {
+		ship_combat_speed_mult = 0.15
+	}
+
+	prerequisites = { "tech_sensors_4" }
+	component_set = "ship_sensor_components"
+
+	ai_weight = {
+		weight = 1004
+	}
+}
